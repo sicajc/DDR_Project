@@ -1,6 +1,8 @@
-# [Introduction to DRAM](#https://www.youtube.com/playlist?list=PLTd6ceoshpreE_xQfQ-akUMU1sEtthFdB)
+# [Introduction to DRAM]
 
 ## Basic Dram STRUCTURE
+
+https://www.youtube.com/playlist?list=PLTd6ceoshpreE_xQfQ-akUMU1sEtthFdB
 
 <p align="center">
   <img src="./img/dram_structure.png" width="500" heigh ="500">
