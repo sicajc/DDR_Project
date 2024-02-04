@@ -1,10 +1,9 @@
-# DDR_Project
-
+# [Introduction to DRAM](#https://www.youtube.com/playlist?list=PLTd6ceoshpreE_xQfQ-akUMU1sEtthFdB)
 
 ## Basic Dram STRUCTURE
 
 <p align="center">
-  <img src="./dram_structure.png" width="500" heigh ="500">
+  <img src="./img/dram_structure.png" width="500" heigh ="500">
 </p>
 
 - The DRAM consist of address decoders of both row and column
@@ -25,14 +24,14 @@
 - Timing diagram shows an active low DRAM architecture, row address is first being inputted then the column address.
 
 <p align="center">
-  <img src="./dram_read_cycle.png" width="500" heigh ="500">
+  <img src="./img/dram_read_cycle.png" width="500" heigh ="500">
 </p>
 
 
 # DIMM organization
 ## Reading out bytes
 <p align="center">
-  <img src="./dram_bank.png" width="500" heigh ="500">
+  <img src="./img/dram_bank.png" width="500" heigh ="500">
 </p>
 
 - To enable reading a whole byte or whole word of memory from DRAM, multiple cells capable of reading 1 bit of data is grouped into Bank. These are all fed with the same column and row address.
@@ -42,19 +41,19 @@
 - There are usually a lot more rows then columns.
 
 <p align="center">
-  <img src="./longer_rows_dram_cell.png" width="500" heigh ="500">
+  <img src="./img/longer_rows_dram_cell.png" width="500" heigh ="500">
 </p>
 
 ## Banks
 
 <p align="center">
-  <img src="./dual_inline_memory_chip.png" width="500" heigh ="500">
+  <img src="./img/dual_inline_memory_chip.png" width="500" heigh ="500">
 </p>
 
 - Multiple banks are then attached to the DRAM chip, this DRAM chip supports a channel for reading and writing datas
 
 <p align="center">
-  <img src="./multiple drams.png" width="500" heigh ="500">
+  <img src="./img/multiple drams.png" width="500" heigh ="500">
 </p>
 
 - The group of DRAM banks is known as a rank.
@@ -65,7 +64,7 @@
 ## Ranks on same board
 
 <p align="center">
-  <img src="./rank on flip side of board.png" width="500" heigh ="500">
+  <img src="./img/rank on flip side of board.png" width="500" heigh ="500">
 </p>
 
 - Usually double ranks are fitted onto the same board forther less pins by sharing pin.
@@ -73,7 +72,7 @@
 ## Data address command line and memory channel
 
 <p align="center">
-  <img src="./dram_data_address_line.png" width="500" heigh ="500">
+  <img src="./img/dram_data_address_line.png" width="500" heigh ="500">
 </p>
 
 - 17 Address line can be used to to access more the 2^17 addresses.
@@ -82,7 +81,7 @@
 ## Double Data Rate(DDR)
 
 <p align="center">
-  <img src="./word_origin_of_Double_data_rate.png" width="500" heigh ="500">
+  <img src="./img/word_origin_of_Double_data_rate.png" width="500" heigh ="500">
 </p>
 
 - Since dram data can be read or write during every clock edge, we call this kind of architecture as double data rate architecture.
@@ -90,7 +89,7 @@
 ## Burst MODE
 
 <p align="center">
-  <img src="./burst_length_supporting.png" width="500" heigh ="500">
+  <img src="./img/burst_length_supporting.png" width="500" heigh ="500">
 </p>
 
 - When opening banks, one must first latch the row into the latch within each cell, then selects the data using the column decoder.
@@ -103,7 +102,7 @@
 ## Interleaving
 
 <p align="center">
-  <img src="./reading_and_writing_64_bits_line_MultipleBANKS.png" width="500" heigh ="500">
+  <img src="./img/reading_and_writing_64_bits_line_MultipleBANKS.png" width="500" heigh ="500">
 </p>
 
 - Modern architecture supports 64 bits of data. This rank consists of multiple dram banks. Activating a the cell within each banks is the duty of DRAM controller.
@@ -116,14 +115,14 @@
 - Fewer banks leads to higher capacity, more data can be stored however, larger bank sizes, yet speed is slower due to less banks for activation at the same time.
 
 <p align="center">
-  <img src="./dram_bank_decision_making.png" width="500" heigh ="500">
+  <img src="./img/dram_bank_decision_making.png" width="500" heigh ="500">
 </p>
 
 # Bank Interleaving operation
 - Timing diagram of bank interleaving for increasing throughput
 
 <p align="center">
-  <img src="./bank_interleaving_timing_diagram.png" width="500" heigh ="500">
+  <img src="./img/bank_interleaving_timing_diagram.png" width="500" heigh ="500">
 </p>
 
 - Notice that after each bank reading, the bank becomes unavaible due to recharging of the bank. Thus interleaving can be used to increase throughput, i.e. the next bank gets activated while the previous bank is still reading or writing.
@@ -131,7 +130,7 @@
 # Bank interleaving address mapping
 
 <p align="center">
-  <img src="./interleaving_access_example.png" width="500" heigh ="500">
+  <img src="./img/interleaving_access_example.png" width="500" heigh ="500">
 </p>
 
 - Notice that column address is arranged in a peculiar way, however, this enables a brilliant data access pattern.
