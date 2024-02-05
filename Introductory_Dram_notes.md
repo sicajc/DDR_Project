@@ -29,6 +29,12 @@ https://www.youtube.com/playlist?list=PLTd6ceoshpreE_xQfQ-akUMU1sEtthFdB
   <img src="./img/dram_read_cycle.png" width="500" heigh ="500">
 </p>
 
+## Flow of DRAM read write Opeartion
+
+<p align="center">
+  <img src="./img/dram_read_write_operations.png" width="500" heigh ="500">
+</p>
+
 
 # DIMM organization
 ## Reading out bytes
