@@ -1,4 +1,4 @@
-# [Introduction to DRAM]
+# Introduction to DRAM
 
 ## Basic Dram STRUCTURE
 
@@ -37,6 +37,7 @@ https://www.youtube.com/playlist?list=PLTd6ceoshpreE_xQfQ-akUMU1sEtthFdB
 
 
 # DIMM organization
+
 ## Reading out bytes
 <p align="center">
   <img src="./img/dram_bank.png" width="500" heigh ="500">
@@ -67,6 +68,11 @@ https://www.youtube.com/playlist?list=PLTd6ceoshpreE_xQfQ-akUMU1sEtthFdB
 - The group of DRAM banks is known as a rank.
 
 - In modern CPU, multiple channels can be ultilized to enable large bandwidth. The data orchestration would be controlled through a DRAM controller.
+
+<p align="center">
+  <img src="./img/dram_rank_and_structure.jpg" width="500" heigh ="500">
+</p>
+
 
 # Burst Mode and Bank Interleaving
 ## Ranks on same board
@@ -143,6 +149,6 @@ https://www.youtube.com/playlist?list=PLTd6ceoshpreE_xQfQ-akUMU1sEtthFdB
 
 - Notice that column address is arranged in a peculiar way, however, this enables a brilliant data access pattern.
 - Notice that the column automatically swap due to the arrangement of the address.
-- Watch the video if cannot understand
+- Rewatch the video if you cannot understand
 
 [Bank inerleaving example](https://youtu.be/-xtWsQvOcjo?t=110)
