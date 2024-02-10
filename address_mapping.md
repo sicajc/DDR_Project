@@ -1,5 +1,5 @@
 # DRAM Controller and address mapping
-
+https://www.youtube.com/watch?v=5o5GbtNZgD4&t=154s
 ## Basic DRAM oepration
 - DRAM controller has queing and scheduling delay also the conversin of basic commands for DRAM.
 - Data flows from bus to memory, there is a bus latency.

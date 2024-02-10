@@ -2,6 +2,16 @@
 
 ## Basic Dram STRUCTURE
 
+- Channels
+- Ranks
+- Chips
+- Banks
+- Array
+- Row
+- Address
+- DRAM cell
+- MOS + Capacitance + Sense Amplifier
+
 https://www.youtube.com/playlist?list=PLTd6ceoshpreE_xQfQ-akUMU1sEtthFdB
 
 <p align="center">
